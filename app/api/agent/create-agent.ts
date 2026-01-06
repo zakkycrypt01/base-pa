@@ -50,7 +50,7 @@ export async function createAgent(): Promise<ReturnType<typeof createReactAgent>
   try {
     // Initialize LLM: https://platform.openai.com/docs/models#gpt-4o
   const llm = new ChatGoogleGenerativeAI({ 
-    model: "gemini-pro",
+    model: "gemini-2.5-flash",
     apiKey: process.env.GOOGLE_API_KEY,
   });
     const tools = await getLangChainTools(agentkit);
